@@ -2,15 +2,20 @@ add_library(example)
 
 target_sources(example
   PRIVATE
-    example.cpp
+    functions.cpp
   PUBLIC
-    example.h
+    functions.hpp
+    vector.hpp
   )
 
 target_include_directories(example
   PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}
   )
+
+add_executable(main)
+target_sources(main PRIVATE main.cpp)
+target_link_libraries(main example)
 
 # we use this to get code coverage
 # flags are only valid with the GNU compiler and on Linux
