@@ -1,6 +1,6 @@
 [![License](https://img.shields.io/badge/license-%20BSD--3-blue.svg)](../master/LICENSE)
 
-This is a simplified version of [bast's gtest-demo repository]https://github.com/bast/gtest-demo)
+This is a simplified version of [bast's gtest-demo repository](https://github.com/bast/gtest-demo)
 with more focus on CMake and GoogleTest, and advanced software engineering features like code coverage and continuous integration removed.
 
 # gtest-demo
