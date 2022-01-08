@@ -17,3 +17,15 @@ add_executable(main)
 target_sources(main PRIVATE main.cpp)
 target_link_libraries(main example)
 
+# we use this to get code coverage
+# flags are only valid with the GNU compiler and on Linux
+if(CMAKE_CXX_COMPILER_ID MATCHES GNU AND CMAKE_HOST_SYSTEM_NAME STREQUAL "Linux")
+  target_compile_options(example
+    PUBLIC
+      "--coverage"
+    )
+  target_link_options(example
+    INTERFACE
+      "--coverage"
+    )
+endif()
