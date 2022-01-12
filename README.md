@@ -30,7 +30,7 @@ $ cd build
 $ ctest
 
 ```
-est project /home/jonas/teaching/oospc++/gtest-demo/build
+Test project /home/jonas/teaching/oospc++/gtest-demo/build
     Start 1: functions.add
 1/9 Test #1: functions.add ...................................   Passed    0.00 sec
     Start 2: functions.subtract
@@ -61,6 +61,7 @@ Total Test time (real) =   0.04 sec
 
 Or directly using `unit_tests`. This allows you to use gtest options.
 Use ./bin/unit_tests --gtest_help to see all possible options.
+
 ```
 $ cd build 
 $ ./bin/unit_tests --gtest_filter=*mixed*
